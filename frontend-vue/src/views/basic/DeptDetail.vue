@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="dept">
     <div>
       <label for="loc" class="col-form-label"> 부서위치 </label>
     </div>
@@ -27,7 +27,6 @@ export default {
   data() {
     return {
       dept: null,
-      toastEditor: null,
     };
   },
   methods: {
@@ -44,7 +43,7 @@ export default {
     },
     // toast ui 에디터 생성
     createEditer(loc) {
-      this.toastEditor = new Editor({
+      new Editor({
         el: document.querySelector("#editor"),
         initialEditType: "wysiwyg",
         initialValue: loc,                // TODO: 중요 : 여기 loc 넣기 , 에디터에 loc 보임
