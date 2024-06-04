@@ -10,8 +10,8 @@
 
 	<!-- TODO: Logger :패키지명 수정 -->
 	<logger name="org.example.simpledms" level="DEBUG" appender-ref="console" />
-	<logger name="jdbc.sqlonly" level="INFO" appender-ref="console-infolog" />
-	<logger name="jdbc.resultsettable" level="INFO" appender-ref="console-infolog" />
+	<logger name="jdbc.sqlonly" level="INFO" appender-ref="console" />
+	<logger name="jdbc.resultsettable" level="INFO" appender-ref="console" />
 
 	<!-- Root Logger : 기본 OFF -> INFO(상세정보) -->
 	<root level="ERROR">
