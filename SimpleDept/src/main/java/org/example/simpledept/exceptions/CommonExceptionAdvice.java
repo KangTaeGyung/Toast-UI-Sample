@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * @author : kangtaegyung
- * @fileName : ExControllerAdvice
+ * @fileName : CommonExceptionAdvice
  * @since : 24. 5. 27.
  * description : 공통된 예외 처리 함수
  *  @ResponseStatus(HttpStatus.상태코드) : 상태코드가 발생하면
