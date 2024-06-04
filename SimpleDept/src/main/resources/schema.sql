@@ -1,0 +1,13 @@
+-- Table , 시퀀스 등 구조 정의
+DROP SEQUENCE SQ_DEPT;
+CREATE SEQUENCE SQ_DEPT START WITH 50 INCREMENT BY 10;
+
+DROP TABLE TB_DEPT CASCADE CONSTRAINT;
+
+CREATE TABLE TB_DEPT (
+                         DNO NUMBER NOT NULL PRIMARY KEY,
+                         DNAME VARCHAR2(255),
+                         LOC VARCHAR2(255),
+                         INSERT_TIME VARCHAR2(255),
+                         UPDATE_TIME VARCHAR2(255)
+);
