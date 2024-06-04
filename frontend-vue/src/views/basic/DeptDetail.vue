@@ -27,6 +27,7 @@ export default {
   data() {
     return {
       dept: null,
+      toastEditor: null,
     };
   },
   methods: {
@@ -43,7 +44,7 @@ export default {
     },
     // toast ui 에디터 생성
     createEditer(loc) {
-      new Editor({
+      this.toastEditor = new Editor({
         el: document.querySelector("#editor"),
         initialEditType: "wysiwyg",
         initialValue: loc,                // TODO: 중요 : 여기 loc 넣기 , 에디터에 loc 보임
